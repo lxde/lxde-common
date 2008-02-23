@@ -1,0 +1,4 @@
+#!/bin/sh
+# FIXME: Wallpaper should be customizable in the future.
+hsetroot -full @prefix@/share/lxde/wallpapers/lxde_blue.jpg
+exec @prefix@/bin/lxsession -s LXDE
