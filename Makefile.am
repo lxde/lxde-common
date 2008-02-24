@@ -4,8 +4,8 @@ bin_SCRIPTS = startlxde
 xsessiondir=$(datadir)/xsessions
 xsession_DATA = LXDE.desktop
 
-defaultsdir=/etc
-defaults_DATA = LXSM-LXDE-Default
+defaultsdir=/etc/xdg/lxsession/LXDE
+defaults_DATA = default
 
 wallpapersdir=$(datadir)/lxde/wallpapers
 wallpapers_DATA=wallpapers/lxde_blue.jpg
