@@ -1,2 +1,2 @@
 #!/bin/sh
-lxsession-logout --banner "@prefix@/share/lxde/images/logout-banner.png"
+lxsession-logout --banner "@prefix@/share/lxde/images/logout-banner.png" --side=top

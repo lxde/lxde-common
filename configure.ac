@@ -25,5 +25,6 @@ AC_OUTPUT([
   lxde-logout
   LXDE.desktop
   lxpanel/config
+  openbox/rc.xml
 ])
 

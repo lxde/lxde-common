@@ -16,7 +16,16 @@ images_DATA=images/logout-banner.png
 lxpaneldir=$(datadir)/lxpanel/profile/LXDE
 lxpanel_DATA=lxpanel/config
 
-EXTRA_DIST = LXDE.desktop.in startlxde.in $(defaults_DATA)
+openboxdir=$(datadir)/lxde/openbox
+openbox_DATA= \
+	openbox/rc.xml \
+	openbox/menu.xml
+
+EXTRA_DIST = \
+	LXDE.desktop.in \
+	startlxde.in \
+	$(defaults_DATA) \
+	openbox/rc.xml.in
 
 CLEANFILES = $(bin_SCRIPTS)
 
