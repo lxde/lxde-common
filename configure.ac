@@ -21,7 +21,9 @@ dnl AM_GLIB_GNU_GETTEXT
 AC_OUTPUT([
   Makefile
   startlxde
+  default
   lxde-logout
   LXDE.desktop
+  lxpanel/config
 ])
 

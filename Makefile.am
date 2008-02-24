@@ -13,6 +13,9 @@ wallpapers_DATA=wallpapers/lxde_blue.jpg
 imagesdir=$(datadir)/lxde/images
 images_DATA=images/logout-banner.png
 
+lxpaneldir=$(datadir)/lxpanel/profile/LXDE
+lxpanel_DATA=lxpanel/config
+
 EXTRA_DIST = LXDE.desktop.in startlxde.in $(defaults_DATA)
 
 CLEANFILES = $(bin_SCRIPTS)
