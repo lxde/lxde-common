@@ -1,4 +1,4 @@
-bin_SCRIPTS = startlxde
+bin_SCRIPTS = startlxde lxde-logout
 
 # Currently these paths are hardcoded.
 xsessiondir=$(datadir)/xsessions
@@ -9,6 +9,9 @@ defaults_DATA = default
 
 wallpapersdir=$(datadir)/lxde/wallpapers
 wallpapers_DATA=wallpapers/lxde_blue.jpg
+
+imagesdir=$(datadir)/lxde/images
+images_DATA=images/logout-banner.png
 
 EXTRA_DIST = LXDE.desktop.in startlxde.in $(defaults_DATA)
 
