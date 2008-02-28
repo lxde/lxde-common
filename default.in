@@ -1,5 +1,6 @@
 smproxy
 xscreensaver -no-splash
+lxclip
 openbox --config-file $HOME/.config/openbox/lxde-rc.xml
 lxpanel --profile LXDE
 
