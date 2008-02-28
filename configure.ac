@@ -18,6 +18,15 @@ dnl AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE,"$GETTEXT_PACKAGE", [Gettext package.])
 dnl ALL_LINGUAS="zh_TW hu es sk pl"
 dnl AM_GLIB_GNU_GETTEXT
 
+# xsessions data of path for GDM
+AC_ARG_WITH([xsession-path],
+    AS_HELP_STRING(
+        [--with-xsession-path=PATH],
+        [set the install path of xsession data (default=/usr/share/xsessions)]),
+        [test x$withval != x && xsesspath="$withval"],
+        [xsesspath=/usr/share/xsessions])
+AC_SUBST(xsesspath)
+
 AC_OUTPUT([
   Makefile
   startlxde

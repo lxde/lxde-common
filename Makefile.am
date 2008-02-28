@@ -1,8 +1,7 @@
 bin_SCRIPTS = startlxde lxde-logout
 
 # Currently these paths are hardcoded.
-#xsessiondir=$(datadir)/xsessions
-xsessiondir=/usr/share/xsessions
+xsessiondir=$(xsesspath)
 xsession_DATA = LXDE.desktop
 
 defaultsdir=/etc/xdg/lxsession/LXDE
