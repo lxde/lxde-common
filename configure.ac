@@ -35,5 +35,6 @@ AC_OUTPUT([
   LXDE.desktop
   lxpanel/config
   openbox/rc.xml
+  pcmanfm/main.lxde
 ])
 

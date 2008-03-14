@@ -21,11 +21,16 @@ openbox_DATA= \
 	openbox/rc.xml \
 	openbox/menu.xml
 
+pcmanfmdir=$(datadir)/lxde/pcmanfm
+pcmanfm_DATA= \
+	pcmanfm/main.lxde
+
 EXTRA_DIST = \
 	LXDE.desktop.in \
 	startlxde.in \
 	$(defaults_DATA) \
-	openbox/rc.xml.in
+	openbox/rc.xml.in \
+	pcmanfm/main.lxde.in
 
 CLEANFILES = $(bin_SCRIPTS)
 
