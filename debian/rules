@@ -35,7 +35,7 @@ build-stamp:  config.status
 
 	# Add here commands to compile the package.
 	$(MAKE)
-	#docbook-to-man debian/lxde-data.sgml > lxde-data.1
+	#docbook-to-man debian/lxde-common.sgml > lxde-common.1
 
 	touch $@
 
@@ -56,8 +56,8 @@ install: build
 	dh_clean -k 
 	dh_installdirs
 
-	# Add here commands to install the package into debian/lxde-data.
-	$(MAKE) DESTDIR=$(CURDIR)/debian/lxde-data install
+	# Add here commands to install the package into debian/lxde-common.
+	$(MAKE) DESTDIR=$(CURDIR)/debian/lxde-common install
 
 
 # Build architecture-independent files here.
@@ -83,7 +83,7 @@ binary-indep: build install
 #	dh_installcron
 #	dh_installinfo
 	dh_installman
-	dh_link usr/share/doc/lxde-data usr/share/doc/lxde
+	dh_link usr/share/doc/lxde-common usr/share/doc/lxde
 	dh_strip
 	dh_compress
 	dh_fixperms

@@ -1,4 +1,4 @@
-Source: lxde-data
+Source: lxde-common
 Section: x11
 Priority: optional
 Maintainer: Andrew Lee <andrew@linux.org.tw>
@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 5), autotools-dev
 Standards-Version: 3.7.3
 Homepage: http://lxde.sourceforge.net
 
-Package: lxde-data
+Package: lxde-common
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: the Lightweight X11 Desktop Environment configuration data

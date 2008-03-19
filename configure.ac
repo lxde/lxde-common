@@ -1,5 +1,5 @@
 AC_PREREQ([2.57])
-AC_INIT(lxde-data,[0.2], [],lxde-data)
+AC_INIT(lxde-common,[0.2], [],lxde-common)
 AM_INIT_AUTOMAKE([dist-bzip2])
 dnl AC_PROG_INTLTOOL(, [no-xml])
 AM_MAINTAINER_MODE
