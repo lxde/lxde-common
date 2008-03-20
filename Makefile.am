@@ -28,7 +28,8 @@ pcmanfm_DATA= \
 EXTRA_DIST = \
 	LXDE.desktop.in \
 	startlxde.in \
-	$(defaults_DATA) \
+	$(wallpapers_DATA) \
+        $(images_DATA) \
 	openbox/rc.xml.in \
 	pcmanfm/main.lxde.in
 
