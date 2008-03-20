@@ -31,6 +31,7 @@ EXTRA_DIST = \
 	$(wallpapers_DATA) \
         $(images_DATA) \
 	openbox/rc.xml.in \
+	openbox/menu.xml \
 	pcmanfm/main.lxde.in
 
 CLEANFILES = $(bin_SCRIPTS)
