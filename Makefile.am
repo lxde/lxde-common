@@ -21,6 +21,13 @@ openbox_DATA= \
 	openbox/rc.xml \
 	openbox/menu.xml
 
+iconthemedir=$(datadir)/icons
+icontheme_DATA= \
+	icon-theme/nuoveXT2
+
+gtkrcdir=$(datadir)/lxde
+gtkrc_DATA = gtkrc-2.0
+
 pcmanfmdir=$(datadir)/lxde/pcmanfm
 pcmanfm_DATA= \
 	pcmanfm/main.lxde
@@ -30,9 +37,13 @@ EXTRA_DIST = \
 	startlxde.in \
 	$(wallpapers_DATA) \
         $(images_DATA) \
+	$(icontheme_DATA) \
+	icon-theme/COPYING \
+	icon-theme/AUTHORS \
 	openbox/rc.xml.in \
 	openbox/menu.xml \
-	pcmanfm/main.lxde.in
+	pcmanfm/main.lxde.in \
+	gtkrc-2.0
 
 CLEANFILES = $(bin_SCRIPTS)
 
