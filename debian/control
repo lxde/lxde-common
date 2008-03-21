@@ -30,7 +30,7 @@ Description: the Lightweight X11 Desktop Environment configuration data
 
 Package: lxde
 Architecture: all
-Depends: pcmanfm (>=0.3.9.5), lxpanel (>= 0.2.7.2), lxsession (>= 0.3), openbox (>= 3.4.6.1), gpicview (>= 0.1.9)
+Depends: lxde-common (>= ${source:Version}), pcmanfm (>=0.3.9.5), lxpanel (>= 0.2.7.2), lxsession (>= 0.3), openbox (>= 3.4.6.1), gpicview (>= 0.1.9), leafpad 
 Recommends: gdm, hal
 Description: Meta-package for the Lightweight X11 Desktop Environment
  LXDE (the Lightweight X11 Desktop Environment) is a new project aimed
@@ -38,7 +38,7 @@ Description: Meta-package for the Lightweight X11 Desktop Environment
  .
  This package is a meta-package depends on the recommended components of 
  the Lightweight X11 Desktop Environment project. It includes pcmanfm, 
- lxpanel, lxsession, openbox and gpicview.
+ lxpanel, lxsession, openbox, leafpad and gpicview.
  .
  If you just want to pick and choose the core components then feel free 
  to remove this package.
