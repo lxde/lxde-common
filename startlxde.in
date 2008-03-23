@@ -19,7 +19,7 @@ if [ ! -f "$OPENBOX_CONF_DIR/lxde-rc.xml" ]; then
 fi
 
 # Ensure we have a proper gtkrc-2.0
-GTK2_RC_FILES="~/.gtkrc-2.0-lxde"
+GTK2_RC_FILES="$HOME/.gtkrc-2.0-lxde"
 if [ ! -f "$GTK2_RC_FILES" ]; then
     cp @prefix@/share/lxde/gtkrc-2.0 "$GTK2_RC_FILES"
 fi
