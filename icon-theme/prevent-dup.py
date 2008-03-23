@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 import os, sys
 os.system( 'fdupes -r nuoveXT2 > dups.txt' )
-
 excludes=['gnome', 'redhat', 'xfce', 'mozilla', 'thunderbird', 'evolution', 'rythmbox', 'stock', 'gtk']
 
 def is_not_generic( file ):
@@ -39,6 +38,19 @@ def get_relative_path( file, relative_to ):
 files=[]
 f = open( 'dups.txt', 'r' )
 generic=''
+
+print '''EXTRA_DIST=AUTHORS COPYING
+
+dist-hook:
+\tcp -raf nuoveXT2 $(distdir)/nuoveXT2
+\trm -rf `find $(distdir)/nuoveXT2 -name '*.svn'`
+
+uninstall-hook:
+\trm -rf $(datadir)/icons/nuoveXT2
+
+install-data-hook:
+\tcp -raf --no-preserve=ownership nuoveXT2 $(datadir)/icons'''
+
 for line in f:
     file = line.rstrip()
     if file != '':
@@ -51,9 +63,8 @@ for line in f:
             generic = files[0]
             del files[0]
         for file in files:
-            print'rm -f %s' % file
-            print 'ln -s %s %s' % (get_relative_path(file, generic), file)
-        print
+            os.system( 'rm -f %s' % file )
+            print '\t$(LN_S) %s $(datadir)/icons/%s' % (get_relative_path(file, generic), file)
         files=[]
         generic=''
 

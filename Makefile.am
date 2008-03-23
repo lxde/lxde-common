@@ -1,3 +1,5 @@
+SUBDIRS = icon-theme
+
 bin_SCRIPTS = startlxde lxde-logout
 
 # Currently these paths are hardcoded.
@@ -21,10 +23,6 @@ openbox_DATA= \
 	openbox/rc.xml \
 	openbox/menu.xml
 
-iconthemedir=$(datadir)/icons
-icontheme_DATA= \
-	icon-theme/nuoveXT2
-
 gtkrcdir=$(datadir)/lxde
 gtkrc_DATA = gtkrc-2.0
 
@@ -36,8 +34,7 @@ EXTRA_DIST = \
 	LXDE.desktop.in \
 	startlxde.in \
 	$(wallpapers_DATA) \
-        $(images_DATA) \
-	$(icontheme_DATA) \
+	$(images_DATA) \
 	icon-theme/COPYING \
 	icon-theme/AUTHORS \
 	openbox/rc.xml.in \
