@@ -13,7 +13,9 @@ wallpapersdir=$(datadir)/lxde/wallpapers
 wallpapers_DATA=wallpapers/lxde_blue.jpg
 
 imagesdir=$(datadir)/lxde/images
-images_DATA=images/logout-banner.png
+images_DATA= \
+	images/logout-banner.png \
+	images/lxde-icon.png
 
 lxpaneldir=$(datadir)/lxpanel/profile/LXDE
 lxpanel_DATA=lxpanel/config

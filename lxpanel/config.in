@@ -54,7 +54,7 @@ Plugin {
 Plugin {
     type = menu
     config {
-        image = /usr/share/lxpanel/images/my-computer.svg
+        image = @prefix@/share/lxde/images/lxde-icon.png
         system {
         }
         separator {
