@@ -97,15 +97,6 @@ Plugin {
         button {
             id = gnome-terminal.desktop
         }
-        button {
-            id = firefox.desktop
-        }
-        button {
-            id = pidgin.desktop
-        }
-        button {
-            id = leafpad.desktop
-        }
     }
 }
 
