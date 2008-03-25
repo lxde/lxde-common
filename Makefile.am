@@ -1,4 +1,4 @@
-SUBDIRS = icon-theme
+SUBDIRS = icon-theme man
 
 bin_SCRIPTS = startlxde lxde-logout
 
