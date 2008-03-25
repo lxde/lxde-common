@@ -8,6 +8,7 @@ uninstall-hook:
 	rm -rf $(DESTDIR)$(datadir)/icons/nuoveXT2
 
 install-data-hook:
+	$(mkdir_p) $(DESTDIR)$(datadir)/icons
 	cp -raf --no-preserve=ownership nuoveXT2 $(DESTDIR)$(datadir)/icons
 	$(LN_S) preferences-desktop.png $(DESTDIR)$(datadir)/icons/nuoveXT2/128x128/categories/xfce4-settings.png
 	$(LN_S) preferences-desktop.png $(DESTDIR)$(datadir)/icons/nuoveXT2/128x128/categories/gnome-settings.png
