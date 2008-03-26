@@ -1,0 +1,23 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 01_default-config.dpatch by Andrew Lee <andrew@linux.org.tw>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: change default terminal and browser
+
+@DPATCH@
+diff -urNad lxde-common-0.3.0~/lxpanel/config.in lxde-common-0.3.0/lxpanel/config.in
+--- lxde-common-0.3.0~/lxpanel/config.in	2008-03-24 21:23:25.000000000 +0800
++++ lxde-common-0.3.0/lxpanel/config.in	2008-03-26 17:05:01.000000000 +0800
+@@ -95,8 +95,11 @@
+             id = pcmanfm.desktop
+         }
+         button {
+-            id = gnome-terminal.desktop
++            id = lxde-terminal-emulator.desktop
+         }
++	button {
++	    id = lxde-www-browser.desktop
++	}
+     }
+ }
+ 
