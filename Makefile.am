@@ -12,8 +12,8 @@ defaults_DATA = default
 wallpapersdir=$(datadir)/lxde/wallpapers
 wallpapers_DATA= \
 	wallpapers/lxde_blue.jpg \
-        wallpapers/lxde_red.jpg \
-        wallpapers/lxde_green.jpg
+ 	wallpapers/lxde_red.jpg \
+	wallpapers/lxde_green.jpg
 
 imagesdir=$(datadir)/lxde/images
 images_DATA= \
