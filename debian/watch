@@ -6,6 +6,17 @@
 # Compulsory line, this is a version 3 file
 version=3
 
-http://sf.net/lxde/lxde-common-(.*)\.tar\.gz
+# Uncomment to examine a Webpage 
+# <Webpage URL> <string match>
+#http://www.example.com/downloads.php lxde-common-(.*)\.tar\.gz
+
+# Uncomment to examine a Webserver directory
+#http://www.example.com/pub/lxde-common-(.*)\.tar\.gz
+
+# Uncommment to examine a FTP server
+#ftp://ftp.example.com/pub/lxde-common-(.*)\.tar\.gz debian uupdate
+
+# Uncomment to find new files on sourceforge, for debscripts >= 2.9
+# http://sf.net/lxde-common/lxde-common-(.*)\.tar\.gz
 
 

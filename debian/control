@@ -2,13 +2,13 @@ Source: lxde-common
 Section: x11
 Priority: optional
 Maintainer: Andrew Lee <andrew@linux.org.tw>
-Build-Depends: debhelper (>= 5), autotools-dev, dpatch
+Build-Depends: debhelper (>= 5), autotools-dev
 Standards-Version: 3.7.3
 Homepage: http://lxde.sourceforge.net
 
 Package: lxde-common
 Architecture: all
-Depends: ${shlibs:Depends}, ${misc:Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends}, pcmanfm (>=0.3.9.5), lxpanel (>= 0.2.7.2), lxsession (>= 0.3), openbox (>= 3.4.6.1), xscreensaver
 Description: the Lightweight X11 Desktop Environment configuration data
  LXDE (the Lightweight X11 Desktop Environment) is a new project aimed
  to provide a new desktop environment which is lightweight and fast.
@@ -30,7 +30,7 @@ Description: the Lightweight X11 Desktop Environment configuration data
 
 Package: lxde
 Architecture: all
-Depends: pcmanfm (>=0.3.9.5), lxpanel (>= 0.2.7.2), lxsession (>= 0.3), openbox (>= 3.4.6.1), gpicview (>= 0.1.9)
+Depends: lxde-common (>= ${source:Version}), pcmanfm (>=0.3.9.5), lxpanel (>= 0.2.7.2), lxsession (>= 0.3), openbox (>= 3.4.6.1), gpicview (>= 0.1.9)
 Recommends: gdm, hal
 Description: Meta-package for the Lightweight X11 Desktop Environment
  LXDE (the Lightweight X11 Desktop Environment) is a new project aimed
