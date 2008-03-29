@@ -35,9 +35,9 @@ Global {
     width = 100
     heighttype = pixel
     height = 26
-    useFontColor = true
+    useFontColor = false
     FontColor = #FFFFFF
-    Background = true
+    Background = false
     BackgroundFile = @prefix@/share/lxpanel/images/background.png
     FileManager = pcmanfm
     Terminal = xterm
