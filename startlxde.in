@@ -18,13 +18,6 @@ if [ ! -f "$OPENBOX_CONF_DIR/lxde-rc.xml" ]; then
     cp @prefix@/share/lxde/openbox/rc.xml "$OPENBOX_CONF_DIR/lxde-rc.xml"
 fi
 
-# Ensure we have a proper gtkrc-2.0
-GTK2_RC_FILES="$HOME/.gtkrc-2.0-lxde"
-if [ ! -f "$GTK2_RC_FILES" ]; then
-    cp @prefix@/share/lxde/gtkrc-2.0 "$GTK2_RC_FILES"
-fi
-export GTK2_RC_FILES
-
 # Enable GTK+2 integration for OpenOffice.org, if available.
 export SAL_USE_VCLPLUGIN=gtk
 
