@@ -28,9 +28,6 @@ openbox_DATA= \
 	openbox/rc.xml \
 	openbox/menu.xml
 
-gtkrcdir=$(datadir)/lxde
-gtkrc_DATA = gtkrc-2.0
-
 pcmanfmdir=$(datadir)/lxde/pcmanfm
 pcmanfm_DATA= \
 	pcmanfm/main.lxde
@@ -44,8 +41,7 @@ EXTRA_DIST = \
 	icon-theme/AUTHORS \
 	openbox/rc.xml.in \
 	openbox/menu.xml \
-	pcmanfm/main.lxde.in \
-	gtkrc-2.0
+	pcmanfm/main.lxde.in
 
 CLEANFILES = $(bin_SCRIPTS)
 
