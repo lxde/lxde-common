@@ -69,7 +69,8 @@ binary-indep: build install
 	dh_testdir
 	dh_testroot
 	dh_installchangelogs
-	dh_installdocs -i
+	dh_installdocs -A
+	dh_movefiles --sourcedir=debian/lxde-common
 #	dh_installexamples
 #	dh_install
 #	dh_installmenu
@@ -83,7 +84,8 @@ binary-indep: build install
 #	dh_installcron
 #	dh_installinfo
 	dh_installman
-	dh_link usr/share/doc/lxde-common usr/share/doc/lxde
+	dh_link usr/share/doc/lxde-common usr/share/doc/lxde \
+		usr/share/doc/lxde-common usr/share/doc/lxde-settings-daemon
 	dh_strip
 	dh_compress
 	dh_fixperms

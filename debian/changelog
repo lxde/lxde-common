@@ -1,13 +1,6 @@
-lxde-common (0.3.2-1~pcman1) gutsy; urgency=low
-
-  * Build ubuntu package.
-
- -- PCMan <pcman@pcman-laptop>  Sun, 20 Apr 2008 18:50:55 +0800
-
-lxde-common (0.3.0-1) unstable; urgency=low
+lxde-common (0.3.2.1-1) unstable; urgency=low
 
   * Initial release (Closes: #471954)
 
- -- Andrew Lee <andrew@linux.org.tw>  Fri, 28 Mar 2008 02:10:00 +0800
-
+ -- Andrew Lee <andrew@linux.org.tw>  Sun, 20 Apr 2008 20:34:47 +0800
 
