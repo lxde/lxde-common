@@ -5,6 +5,8 @@ The nuoveXT2 icon theme included in this package is created by Alexandre Moore.
 http://www.gnome-look.org/content/show.php/nuoveXT+2?content=56625
 It's licensed under GNU LGPL. See icon-theme/COPYING for detail.
 
+lxde-settings uses MIT licensed source code from gnome-settings-daemon:
+	Copyright (C) 2001 Owen Taylor, Matthias Clasen, Red Hat, Inc.
 
 		    GNU GENERAL PUBLIC LICENSE
 		       Version 2, June 1991

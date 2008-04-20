@@ -1,4 +1,4 @@
-SUBDIRS = icon-theme man
+SUBDIRS = lxde-settings icon-theme man
 
 bin_SCRIPTS = startlxde lxde-logout
 
@@ -7,7 +7,7 @@ xsessiondir=$(xsesspath)
 xsession_DATA = LXDE.desktop
 
 defaultsdir=/etc/xdg/lxsession/LXDE
-defaults_DATA = default
+defaults_DATA = default autostart config
 
 wallpapersdir=$(datadir)/lxde/wallpapers
 wallpapers_DATA= \
@@ -33,6 +33,9 @@ pcmanfm_DATA= \
 	pcmanfm/main.lxde
 
 EXTRA_DIST = \
+	default \
+	autostart \
+	config \
 	LXDE.desktop.in \
 	startlxde.in \
 	$(wallpapers_DATA) \
