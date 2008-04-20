@@ -49,6 +49,7 @@ AC_OUTPUT([
   LXDE.desktop
   lxpanel/panel
   openbox/rc.xml
+  openbox-lxde
   pcmanfm/main.lxde
   man/Makefile
 ])

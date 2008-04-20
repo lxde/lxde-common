@@ -47,7 +47,7 @@ EXTRA_DIST = \
 	icon-theme/AUTHORS \
 	openbox/rc.xml.in \
 	openbox/menu.xml \
-	openbox-lxde \
+	openbox-lxde.in \
 	pcmanfm/main.lxde.in \
 	$(lxpanel_DATA) \
 	lxpanel/panel.in
