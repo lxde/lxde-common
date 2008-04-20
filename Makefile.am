@@ -23,6 +23,9 @@ images_DATA= \
 lxpaneldir=$(datadir)/lxpanel/profile/LXDE
 lxpanel_DATA=lxpanel/config
 
+lxpanel_paneldir=$(datadir)/lxpanel/profile/LXDE/panels
+lxpanel_panel_DATA=lxpanel/panel
+
 openboxdir=$(datadir)/lxde/openbox
 openbox_DATA= \
 	openbox/rc.xml \
@@ -44,7 +47,10 @@ EXTRA_DIST = \
 	icon-theme/AUTHORS \
 	openbox/rc.xml.in \
 	openbox/menu.xml \
-	pcmanfm/main.lxde.in
+	openbox-lxde \
+	pcmanfm/main.lxde.in \
+	$(lxpanel_DATA) \
+	lxpanel/panel.in
 
 CLEANFILES = $(bin_SCRIPTS)
 

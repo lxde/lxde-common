@@ -1,5 +1,5 @@
 AC_PREREQ([2.57])
-AC_INIT(lxde-common,[0.3.1], [],lxde-common)
+AC_INIT(lxde-common,[0.3.2], [],lxde-common)
 AM_INIT_AUTOMAKE([dist-bzip2 no-dist-gzip])
 dnl AC_PROG_INTLTOOL(, [no-xml])
 dnl AM_MAINTAINER_MODE
@@ -47,7 +47,7 @@ AC_OUTPUT([
   default
   lxde-logout
   LXDE.desktop
-  lxpanel/config
+  lxpanel/panel
   openbox/rc.xml
   pcmanfm/main.lxde
   man/Makefile
