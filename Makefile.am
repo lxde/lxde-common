@@ -1,6 +1,6 @@
 SUBDIRS = lxde-settings icon-theme man
 
-bin_SCRIPTS = startlxde lxde-logout
+bin_SCRIPTS = startlxde lxde-logout openbox-lxde
 
 # Currently these paths are hardcoded.
 xsessiondir=$(xsesspath)
