@@ -29,7 +29,7 @@ Plugin {
 Plugin {
     type = menu
     Config {
-        image=@prefix@/share/lxpanel/images/my-computer.png
+        image=@prefix@/share/lxde/images/lxde-icon.png
         system {
         }
         separator {
