@@ -220,7 +220,7 @@
   <keybind key="C-A-d">
     <action name="ToggleShowDesktop"/>
   </keybind>
-  
+
   <!-- Keybindings for windows -->
   <keybind key="A-F4">
     <action name="Close"/>
@@ -277,6 +277,17 @@
       </action>
   </keybind>
 
+  <keybind key="F11">
+     <action name="ToggleFullscreen"/>
+  </keybind>
+
+  <!-- Launch Task Manager with Ctrl+Alt+Del -->
+  <keybind key="A-C-Delete">
+      <action name="Execute">
+          <command>lxtask</command>
+      </action>
+  </keybind>
+
 </keyboard>
 
 
@@ -309,7 +320,7 @@
     </mousebind>
     <mousebind button="A-Right" action="Drag">
       <action name="Resize"/>
-    </mousebind> 
+    </mousebind>
 
     <mousebind button="A-Middle" action="Press">
       <action name="Lower"/>
@@ -601,7 +612,7 @@
     <!-- Menus -->
     <mousebind button="Middle" action="Press">
       <action name="ShowMenu"><menu>client-list-combined-menu</menu></action>
-    </mousebind> 
+    </mousebind>
     <mousebind button="Right" action="Press">
       <action name="ShowMenu"><menu>root-menu</menu></action>
     </mousebind>
@@ -663,7 +674,7 @@
   # order that they appear in this list
 
 
-    # each element can be left out or set to 'default' to specify to not 
+    # each element can be left out or set to 'default' to specify to not
     # change that attribute of the window
 
     <decor>yes</decor>
