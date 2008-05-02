@@ -26,8 +26,8 @@ manpage.1: manpage.sgml
   <!ENTITY dhsection   "<manvolnum>1</manvolnum>">
   <!ENTITY dhemail     "<email>grandpaul@gmail.com</email>">
   <!ENTITY dhusername  "paulliu">
-  <!ENTITY dhucpackage "<refentrytitle>LXDE-SETTINGS-DAEMON</refentrytitle>">
-  <!ENTITY dhpackage   "lxde-settings-daemon">
+  <!ENTITY dhucpackage "<refentrytitle>LXDE-SETTINGS</refentrytitle>">
+  <!ENTITY dhpackage   "lxde-settings">
 
   <!ENTITY debian      "<productname>Debian</productname>">
   <!ENTITY gnu         "<acronym>GNU</acronym>">
