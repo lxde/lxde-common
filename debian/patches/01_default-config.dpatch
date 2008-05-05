@@ -4,20 +4,21 @@
 ## All lines beginning with `## DP:' are a description of the patch.
 ## DP: change default terminal and browser
 
+
 @DPATCH@
-diff -urNad lxde-common-0.3.0~/lxpanel/config.in lxde-common-0.3.0/lxpanel/config.in
---- lxde-common-0.3.0~/lxpanel/config.in	2008-03-24 21:23:25.000000000 +0800
-+++ lxde-common-0.3.0/lxpanel/config.in	2008-03-26 17:05:01.000000000 +0800
-@@ -95,8 +95,11 @@
-             id = pcmanfm.desktop
+diff -urNad lxde-common-0.3.2.1~/lxpanel/panel.in lxde-common-0.3.2.1/lxpanel/panel.in
+--- lxde-common-0.3.2.1~/lxpanel/panel.in	2008-04-22 21:36:48.000000000 +0800
++++ lxde-common-0.3.2.1/lxpanel/panel.in	2008-04-23 03:17:32.000000000 +0800
+@@ -53,10 +53,10 @@
+             id=pcmanfm.desktop
          }
-         button {
--            id = gnome-terminal.desktop
-+            id = lxde-terminal-emulator.desktop
+         Button {
+-            id=gnome-terminal.desktop
++            id=lxde-x-terminal-emulator.desktop
          }
-+	button {
-+	    id = lxde-www-browser.desktop
-+	}
+         Button {
+-            id=firefox.desktop
++            id=lxde-x-www-browser.desktop
+         }
      }
  }
- 

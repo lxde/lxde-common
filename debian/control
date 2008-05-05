@@ -2,9 +2,9 @@ Source: lxde-common
 Section: x11
 Priority: optional
 Maintainer: Andrew Lee <andrew@linux.org.tw>
-Build-Depends: debhelper (>= 5), autotools-dev, libgtk2.0-dev (>=2.6)
+Build-Depends: debhelper (>= 5), autotools-dev, libgtk2.0-dev (>=2.6), dpatch
 Standards-Version: 3.7.3
-Homepage: http://lxde.org
+Homepage: http://lxde.sourceforge.net
 
 Package: lxde-common
 Architecture: all
@@ -27,7 +27,6 @@ Description: the Lightweight X11 Desktop Environment configuration data
   - Easy-to-use, the user interface is simple, but usable enough
   - Desktop independent (suprise! Every component can be used without LXDE)
   - Standard compliant, follows the specs on freedesktop.org
-  - Suitable for old machines(old Pentium II CPU is enough).
 
 Package: lxde-settings-daemon
 Architecture: any
@@ -37,7 +36,7 @@ Description: LXDE settings daemon
 
 Package: lxde
 Architecture: all
-Depends: lxde-common (>= ${source:Version}), pcmanfm (>=0.3.9.5), lxpanel (>= 0.2.7.2), lxsession-lite (>=0.3.5) | lxsession (>= 0.3), openbox (>= 3.4.6.1), gpicview (>= 0.1.9), leafpad, xarchiver
+Depends: lxde-common (>= ${source:Version}), pcmanfm (>=0.3.9.5), lxpanel (>= 0.2.7.2), lxsession-lite (>=0.3.5) | lxsession (>= 0.3), openbox (>= 3.4.6.1), gpicview (>= 0.1.9), xscreensaver, leafpad, xarchiver
 Recommends: gdm, hal
 Description: Meta-package for the Lightweight X11 Desktop Environment
  LXDE (the Lightweight X11 Desktop Environment) is a new project aimed

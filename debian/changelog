@@ -1,6 +1,6 @@
-lxde-common (0.3.2.1-1) unstable; urgency=low
+lxde-common (0.3.2.1+svn20080426-1) unstable; urgency=low
 
   * Initial release (Closes: #471954)
 
- -- Andrew Lee <andrew@linux.org.tw>  Sun, 20 Apr 2008 20:34:47 +0800
+ -- Andrew Lee <andrew@linux.org.tw>  Sat, 26 Apr 2008 11:00:37 +0800
 
