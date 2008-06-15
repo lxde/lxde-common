@@ -47,6 +47,7 @@ AC_OUTPUT([
   default
   lxde-logout
   LXDE.desktop
+  lxde-logout.desktop
   lxpanel/panel
   openbox/rc.xml
   openbox-lxde
