@@ -6,7 +6,7 @@ bin_SCRIPTS = startlxde lxde-logout openbox-lxde
 xsessiondir=$(xsesspath)
 xsession_DATA = LXDE.desktop
 
-defaultsdir=/etc/xdg/lxsession/LXDE
+defaultsdir=$(sysconfdir)/xdg/lxsession/LXDE
 defaults_DATA = default autostart config
 
 wallpapersdir=$(datadir)/lxde/wallpapers
