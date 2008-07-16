@@ -22,7 +22,13 @@
   <separator />
   <menu id="client-list-menu" />
   <separator />
-  <item label="ObConf">
+  <item label="Desktop Settings">
+    <action name="Execute">
+      <startupnotify><enabled>yes</enabled></startupnotify>
+      <command>pcmanfm --show-pref 2</command>
+    </action>
+  </item>
+  <item label="Window Management Settings">
     <action name="Execute">
       <startupnotify><enabled>yes</enabled><icon>openbox</icon></startupnotify>
       <command>obconf</command>
