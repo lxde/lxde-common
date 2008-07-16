@@ -1,3 +1,5 @@
+! This file is kept for backward compatibility.
+! Only used by obsolete lxsession, not lxsession-lite.
 lxde-settings
 smproxy
 xscreensaver -no-splash
