@@ -1,6 +1,28 @@
-lxde-common (0.3.2.1+svn20080426-1) unstable; urgency=low
+lxde-common (0.3.2.1+svn20080509-4) unstable; urgency=high
+
+  * Remove parallel builds support in debian/rules. (Closes: #490328) 
+
+ -- Andrew Lee <andrew@linux.org.tw>  Sat, 12 Jul 2008 11:44:09 +0800
+
+lxde-common (0.3.2.1+svn20080509-3) unstable; urgency=low
+
+  * lxde-settings-daemon recommends lxde-common (Closes: #485642)
+  * new metapackae lxde-core
+  * Corrected dh_movefiles in debian/rules (Closes: #487854) 
+  * Bumped Standards-Version to 3.8.0.0
+    - Supporting the standardized environment variable `DEB_BUILD_OPTIONS'
+
+ -- Andrew Lee <andrew@linux.org.tw>  Sat, 28 Jun 2008 22:13:52 +0800
+
+lxde-common (0.3.2.1+svn20080509-2) unstable; urgency=low
+
+  * debian/copyright:
+    Point full text of LGPL on the system 
+
+ -- Andrew Lee <andrew@linux.org.tw>  Thu, 29 May 2008 17:24:41 +0800
+
+lxde-common (0.3.2.1+svn20080509-1) unstable; urgency=low
 
   * Initial release (Closes: #471954)
 
- -- Andrew Lee <andrew@linux.org.tw>  Sat, 26 Apr 2008 11:00:37 +0800
-
+ -- Andrew Lee <andrew@linux.org.tw>  Thu, 29 May 2008 00:17:30 +0800

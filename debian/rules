@@ -16,6 +16,21 @@ include /usr/share/dpatch/dpatch.make
 DEB_HOST_GNU_TYPE   ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
 DEB_BUILD_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
 
+CFLAGS = -Wall -g
+INSTALL = install
+INSTALL_FILE    = $(INSTALL) -p    -o root -g root  -m  644
+INSTALL_PROGRAM = $(INSTALL) -p    -o root -g root  -m  755
+INSTALL_SCRIPT  = $(INSTALL) -p    -o root -g root  -m  755
+INSTALL_DIR     = $(INSTALL) -p -d -o root -g root  -m  755
+
+ifneq (,$(filter noopt,$(DEB_BUILD_OPTIONS)))
+    CFLAGS += -O0
+else
+    CFLAGS += -O2
+endif
+ifeq (,$(filter nostrip,$(DEB_BUILD_OPTIONS)))
+    INSTALL_PROGRAM += -s
+endif
 
 config.status: configure patch-stamp
 	dh_testdir
@@ -26,7 +41,7 @@ endif
 ifneq "$(wildcard /usr/share/misc/config.guess)" ""
 	cp -f /usr/share/misc/config.guess config.guess
 endif
-	./configure --host=$(DEB_HOST_GNU_TYPE) --build=$(DEB_BUILD_GNU_TYPE) --prefix=/usr --mandir=\$${prefix}/share/man --infodir=\$${prefix}/share/info CFLAGS="$(CFLAGS)" LDFLAGS="-Wl,-z,defs"
+	./configure --host=$(DEB_HOST_GNU_TYPE) --build=$(DEB_BUILD_GNU_TYPE) --prefix=/usr --sysconfdir=/etc --mandir=\$${prefix}/share/man --infodir=\$${prefix}/share/info CFLAGS="$(CFLAGS)" LDFLAGS="-Wl,-z,defs"
 
 
 build: build-stamp
@@ -48,6 +63,7 @@ clean: unpatch
 	# Add here commands to clean up after the build process.
 	[ ! -f Makefile ] || $(MAKE) distclean
 	rm -f config.sub config.guess
+	rm -f lxde-settings/*.gcno
 
 	dh_clean 
 
@@ -59,19 +75,32 @@ install: build
 
 	# Add here commands to install the package into debian/lxde-common.
 	$(MAKE) DESTDIR=$(CURDIR)/debian/lxde-common install
+	dh_movefiles --sourcedir=debian/lxde-common
+
 
 
 # Build architecture-independent files here.
 binary-indep: build install
-# We have nothing to do by default.
-
-# Build architecture-dependent files here.
-#binary-arch: build install
 	dh_testdir
 	dh_testroot
-	dh_installchangelogs
-	dh_installdocs -A
-	dh_movefiles --sourcedir=debian/lxde-common
+	dh_installchangelogs -a -i
+	dh_installdocs -a -i
+	dh_installman -a -i 
+	dh_link usr/share/doc/lxde-common usr/share/doc/lxde
+	dh_strip -a -i
+	dh_compress -a -i
+	dh_fixperms -a -i
+	dh_installdeb -Nlxde-settings-daemon
+	dh_gencontrol -a -i
+	dh_md5sums -a -i
+	dh_builddeb -a -i
+
+# Build architecture-dependent files here.
+binary-arch: build install
+	dh_testdir
+	dh_testroot
+	dh_installchangelogs -a -i
+	dh_installdocs -a -i
 #	dh_installexamples
 #	dh_install
 #	dh_installmenu
@@ -84,19 +113,19 @@ binary-indep: build install
 #	dh_installinit
 #	dh_installcron
 #	dh_installinfo
-	dh_installman
+	dh_installman -a -i 
 	dh_link usr/share/doc/lxde-common usr/share/doc/lxde \
 		usr/share/doc/lxde-common usr/share/doc/lxde-settings-daemon
-	dh_strip
-	dh_compress
-	dh_fixperms
+	dh_strip -a -i
+	dh_compress -a -i
+	dh_fixperms -a -i
 #	dh_perl
 #	dh_makeshlibs
-	dh_installdeb
-	dh_shlibdeps
-	dh_gencontrol
-	dh_md5sums
-	dh_builddeb
+	dh_installdeb -plxde-settings-daemon
+	dh_shlibdeps -L lxde-settings-daemon -l debian/lxde-settings-daemon/usr/bin
+	dh_gencontrol -a -i
+	dh_md5sums -a -i
+	dh_builddeb -a -i
 
 binary: binary-indep binary-arch
 .PHONY: build clean binary-indep binary-arch binary install 
