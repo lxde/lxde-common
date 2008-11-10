@@ -4,6 +4,7 @@ Encoding=UTF-8
 Name=LXDE
 Comment=LXDE - Lightweight X11 desktop environment
 Comment[zh_TW]=LXDE - 輕量級的 X11 桌面環境
+Comment[fi]=LXDE - kevyt X11-työpöytäympäristö
 Exec=@prefix@/bin/startlxde
 # Icon=
 Type=Application
