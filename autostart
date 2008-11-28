@@ -1,4 +1,4 @@
-@lxde-settings
+@lxde-settings-daemon
 @xscreensaver -no-splash
 @lxpanel --profile LXDE
 @pcmanfm -d

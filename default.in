@@ -1,6 +1,6 @@
 ! This file is kept for backward compatibility.
 ! Only used by obsolete lxsession, not lxsession-lite.
-lxde-settings
+lxde-settings-daemon
 smproxy
 xscreensaver -no-splash
 openbox --config-file $XDG_CONFIG_HOME/openbox/lxde-rc.xml
