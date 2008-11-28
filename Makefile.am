@@ -1,4 +1,4 @@
-SUBDIRS = lxde-settings icon-theme man
+SUBDIRS = icon-theme man
 
 bin_SCRIPTS = startlxde lxde-logout openbox-lxde
 
