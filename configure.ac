@@ -12,9 +12,9 @@ AC_PROG_LN_S
 AC_ARG_WITH([xsession-path],
     AS_HELP_STRING(
         [--with-xsession-path=PATH],
-        [set the install path of xsession data (default=/usr/share/xsessions)]),
+        [set the install path of xsession data [[DATAROOTDIR/xsessions]]]),
         [test x$withval != x && xsesspath="$withval"],
-        [xsesspath=/usr/share/xsessions])
+        [xsesspath="\${datarootdir}/xsessions"])
 AC_SUBST(xsesspath)
 
 
