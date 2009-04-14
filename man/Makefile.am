@@ -6,8 +6,11 @@ EXTRA_DIST = lxde-settings.sgml openbox-lxde.sgml
 dist-hook: lxde-settings.1 openbox-lxde.1
 
 lxde-settings.1: lxde-settings.sgml
-	docbook-to-man $< > $@
+	(test -f "`which docbook-to-man`" && docbook-to-man $< > $@) || \
+	(test -f "`which db2man`" && db2man $< > $@) || \
+	(test -f "`which docbook2man`" && docbook2man $< > $@)
 
 openbox-lxde.1: openbox-lxde.sgml
-	docbook-to-man $< > $@
-
+	(test -f "`which docbook-to-man`" && docbook-to-man $< > $@) || \
+	(test -f "`which db2man`" && db2man $< > $@) || \
+	(test -f "`which docbook2man`" && docbook2man $< > $@)
