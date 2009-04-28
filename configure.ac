@@ -22,7 +22,6 @@ AC_OUTPUT([
   Makefile
   icon-theme/Makefile
   startlxde
-  default
   lxde-logout
   LXDE.desktop
   lxde-logout.desktop
