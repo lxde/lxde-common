@@ -8,4 +8,4 @@ dist-hook: openbox-lxde.1
 openbox-lxde.1: openbox-lxde.sgml
 	(test -f "`which docbook-to-man`" && docbook-to-man $< > $@) || \
 	(test -f "`which db2man`" && db2man $< > $@) || \
-	(test -f "`which docbook2man`" && docbook2man $< > $@)
+	(test -f "`which docbook2man`" && docbook2man $< && mv OPENBOX-LXDE.1 $@)
