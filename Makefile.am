@@ -36,7 +36,6 @@ pcmanfm_DATA= \
 	pcmanfm/main.lxde
 
 EXTRA_DIST = \
-	default \
 	autostart \
 	config \
 	LXDE.desktop.in \
