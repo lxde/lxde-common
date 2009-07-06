@@ -1,22 +1,13 @@
 dist_man_MANS = lxde-logout.1 startlxde.1 openbox-lxde.1
 
-man_MANS = \
-	openbox-lxde.1
-
-man_XMANS = \
-	openbox-lxde.xml
-
-EXTRA_DIST = \
-	$(man_MANS) \
-	$(man_XMANS)
-
+EXTRA_DIST = openbox-lxde.xml
 
 if ENABLE_REGENERATE_MAN
 
 openbox-lxde.1: openbox-lxde.xml
 	$(XSLTPROC) -nonet http://docbook.sourceforge.net/release/xsl/current/manpages/docbook.xsl $<        
 
-CLEANFILES = $(man_MANS) 
+CLEANFILES = openbox-lxde.1
 else
 
 $(man_MANS):
