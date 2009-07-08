@@ -23,7 +23,4 @@ ${ACLOCAL:-aclocal$AM_VERSION} ${ACLOCAL_ARG}
 $AUTOMAKE --add-missing --copy --include-deps
 ${AUTOCONF:-autoconf$AC_VERSION}
 
-# mkinstalldirs was not correctly installed in some cases.
-cp -f /usr/share/${AUTOMAKE}-*/mkinstalldirs .
-
 rm -rf autom4te.cache
