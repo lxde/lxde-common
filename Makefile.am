@@ -7,7 +7,7 @@ xsessiondir=$(xsesspath)
 xsession_DATA = LXDE.desktop
 
 defaultsdir=$(sysconfdir)/xdg/lxsession/LXDE
-defaults_DATA = autostart config
+defaults_DATA = autostart desktop.conf
 
 wallpapersdir=$(datadir)/lxde/wallpapers
 wallpapers_DATA= \
