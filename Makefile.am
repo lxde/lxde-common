@@ -37,7 +37,7 @@ pcmanfm_DATA= \
 
 EXTRA_DIST = \
 	autostart \
-	config \
+	desktop.conf \
 	LXDE.desktop.in \
 	startlxde.in \
 	$(wallpapers_DATA) \
