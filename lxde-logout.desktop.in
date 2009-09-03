@@ -1,11 +1,14 @@
 [Desktop Entry]
 Encoding=UTF-8
+Type=Application
 Name=Logout
-Name[zh_TW]=登出
+Name[de]=Abmelden
 Name[fi]=Kirjaudu ulos
+Name[zh_TW]=登出
 Comment=Logout, shutdown or reboot
-Comment[zh_TW]=登出、關機、或重新開機
+Comment[de]=Abmelden, herunterfahren oder neu starten
 Comment[fi]=Kirjaudu ulos, sammuta tai käynnistä tietokone uudelleen
-Icon=stock_exit
+Comment[zh_TW]=登出、關機、或重新開機
+Icon=gnome-logout
 Exec=lxde-logout
 NoDisplay=true
