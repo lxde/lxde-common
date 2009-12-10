@@ -1,4 +1,4 @@
-SUBDIRS = icon-theme man
+SUBDIRS = man
 
 bin_SCRIPTS = startlxde lxde-logout openbox-lxde
 
@@ -42,8 +42,6 @@ EXTRA_DIST = \
 	startlxde.in \
 	$(wallpapers_DATA) \
 	$(images_DATA) \
-	icon-theme/COPYING \
-	icon-theme/AUTHORS \
 	openbox/rc.xml.in \
 	openbox/menu.xml \
 	openbox-lxde.in \

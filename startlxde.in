@@ -25,4 +25,4 @@ xprop -root -remove _NET_NUMBER_OF_DESKTOPS -remove _NET_DESKTOP_NAMES -remove _
 export SAL_USE_VCLPLUGIN=gtk
 
 # Start the LXDE session
-exec @prefix@/bin/lxsession -s LXDE
+exec @prefix@/bin/lxsession -s LXDE -e LXDE

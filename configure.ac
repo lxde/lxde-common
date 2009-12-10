@@ -1,6 +1,6 @@
 AC_PREREQ([2.57])
-AC_INIT(lxde-common,[0.4.2], [],lxde-common)
-AM_INIT_AUTOMAKE([dist-bzip2 no-dist-gzip])
+AC_INIT(lxde-common,[0.5.0], [],lxde-common)
+AM_INIT_AUTOMAKE()
 dnl AC_PROG_INTLTOOL(, [no-xml])
 dnl AM_MAINTAINER_MODE
 
@@ -41,7 +41,6 @@ AM_CONDITIONAL(ENABLE_REGENERATE_MAN, test "x$enable_man" != "xno")
 
 AC_OUTPUT([
   Makefile
-  icon-theme/Makefile
   startlxde
   lxde-logout
   LXDE.desktop
