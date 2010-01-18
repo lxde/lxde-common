@@ -18,6 +18,14 @@ if [ ! -f "$OPENBOX_CONF_DIR/lxde-rc.xml" ]; then
 	cp @prefix@/share/lxde/openbox/rc.xml "$OPENBOX_CONF_DIR/lxde-rc.xml"
 fi
 
+# Ensure the existance of the 'Desktop' folder
+if [ -e "$XDG_CONFIG_HOME/user-dirs.dirs" ]; then
+	. "$XDG_CONFIG_HOME/user-dirs.dirs"
+else
+	XDG_DESKTOP_DIR="$HOME/Desktop"
+fi
+mkdir -p "$XDG_DESKTOP_DIR"
+
 # Clean up after GDM (GDM sets the number of desktops to one)
 xprop -root -remove _NET_NUMBER_OF_DESKTOPS -remove _NET_DESKTOP_NAMES -remove _NET_CURRENT_DESKTOP 2> /dev/null
 
