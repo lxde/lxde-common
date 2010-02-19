@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+Name=Shutdown
+Name[zh_TW]=關機
+Comment=Shutdown or Reboot
+Icon=stock_exit
+Exec=lxde-logout
+NoDisplay=true

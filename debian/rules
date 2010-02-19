@@ -17,19 +17,11 @@ DEB_HOST_GNU_TYPE   ?= $(shell dpkg-architecture -qDEB_HOST_GNU_TYPE)
 DEB_BUILD_GNU_TYPE  ?= $(shell dpkg-architecture -qDEB_BUILD_GNU_TYPE)
 
 CFLAGS = -Wall -g
-INSTALL = install
-INSTALL_FILE    = $(INSTALL) -p    -o root -g root  -m  644
-INSTALL_PROGRAM = $(INSTALL) -p    -o root -g root  -m  755
-INSTALL_SCRIPT  = $(INSTALL) -p    -o root -g root  -m  755
-INSTALL_DIR     = $(INSTALL) -p -d -o root -g root  -m  755
 
 ifneq (,$(filter noopt,$(DEB_BUILD_OPTIONS)))
     CFLAGS += -O0
 else
     CFLAGS += -O2
-endif
-ifeq (,$(filter nostrip,$(DEB_BUILD_OPTIONS)))
-    INSTALL_PROGRAM += -s
 endif
 
 config.status: configure patch-stamp
@@ -75,6 +67,11 @@ install: build
 
 	# Add here commands to install the package into debian/lxde-common.
 	$(MAKE) DESTDIR=$(CURDIR)/debian/lxde-common install
+
+	# Install .desktop files
+	install -d $(CURDIR)/debian/lxde-common/usr/share/applications/
+	install $(CURDIR)/debian/lxde-logout.desktop $(CURDIR)/debian/lxde-common/usr/share/applications/
+	install $(CURDIR)/debian/lxde-screenlock.desktop $(CURDIR)/debian/lxde-common/usr/share/applications/
 	dh_movefiles --sourcedir=debian/lxde-common
 
 
@@ -83,49 +80,20 @@ install: build
 binary-indep: build install
 	dh_testdir
 	dh_testroot
-	dh_installchangelogs -a -i
-	dh_installdocs -a -i
-	dh_installman -a -i 
-	dh_link usr/share/doc/lxde-common usr/share/doc/lxde
-	dh_strip -a -i
-	dh_compress -a -i
-	dh_fixperms -a -i
-	dh_installdeb -Nlxde-settings-daemon
-	dh_gencontrol -a -i
-	dh_md5sums -a -i
-	dh_builddeb -a -i
+	dh_installchangelogs 
+	dh_installdocs 
+	dh_installman 
+	dh_link -a
+	dh_compress 
+	dh_fixperms 
+	dh_installdeb
+	dh_gencontrol 
+	dh_md5sums 
+	dh_builddeb 
 
 # Build architecture-dependent files here.
-binary-arch: build install
-	dh_testdir
-	dh_testroot
-	dh_installchangelogs -a -i
-	dh_installdocs -a -i
-#	dh_installexamples
-#	dh_install
-#	dh_installmenu
-#	dh_installdebconf	
-#	dh_installlogrotate
-#	dh_installemacsen
-#	dh_installpam
-#	dh_installmime
-#	dh_python
-#	dh_installinit
-#	dh_installcron
-#	dh_installinfo
-	dh_installman -a -i 
-	dh_link usr/share/doc/lxde-common usr/share/doc/lxde \
-		usr/share/doc/lxde-common usr/share/doc/lxde-settings-daemon
-	dh_strip -a -i
-	dh_compress -a -i
-	dh_fixperms -a -i
-#	dh_perl
-#	dh_makeshlibs
-	dh_installdeb -plxde-settings-daemon
-	dh_shlibdeps -L lxde-settings-daemon -l debian/lxde-settings-daemon/usr/bin
-	dh_gencontrol -a -i
-	dh_md5sums -a -i
-	dh_builddeb -a -i
+binary-arch: install
+# We have nothing to do here.
 
 binary: binary-indep binary-arch
 .PHONY: build clean binary-indep binary-arch binary install 

@@ -1,3 +1,121 @@
+lxde-common (0.5.0-do_not_upload) UNRELEASED; urgency=low
+
+  * Update README.Debian for 'startx' users. (Closes:#570083)
+  * Added freedesktop.org's specification required type keys to 
+    lxde-logout.desktop and lxde-screenlock.desktop (Closes:#570135)
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Wed, 17 Feb 2010 05:13:55 +0800
+
+lxde-common (0.5.0-3) unstable; urgency=low
+
+  * debian/control:
+    - fallback-depend on pcmanfm-nohal for lxde-core. (Closes:#568117)
+    - Added menu-xdg as Recommends for lxde.
+  * Added upstream wiki url into README.Debian. (Closes:#565959)
+  * Apply 03_menu-xdg.dpatch to support Debian Menu. (Closes:#517190)
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Mon, 08 Feb 2010 15:05:04 +0800
+
+lxde-common (0.5.0-2) unstable; urgency=low
+
+  * Added 02_lxsession_0.4.1.dpatch to support new command line argument in
+    lxsession 0.4.1
+  * debian/control: depends on lxsession (>=0.4.1)
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Fri, 18 Dec 2009 22:53:55 +0800
+
+lxde-common (0.5.0-1) unstable; urgency=low
+
+  * New upstream release
+    - New config files to support new changes in lxsession
+    - Added some translation to lxde-logout
+    - Remove icon theme from it (Closes: #545248)
+  * debian/control:
+    - lxde-common: remove depends on lxde-setting-daemon
+    - lxde-core: remove depends on lxsessions
+    - lxde: move lxmusic from depends to recommends
+    - lxde: added depends on lxde-icon-theme
+  * Updated debian/watch
+  * debian/rules:
+    - drop desktop.conf(included in upstream)
+  * Added README.source
+  * Updated README.Debian and NEWS.Debian
+  * Bumped Standard-version to 3.8.3
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Fri, 18 Dec 2009 15:48:43 +0800
+
+lxde-common (0.4.2-3) unstable; urgency=low
+
+  * Added desktop.conf for the built-in settings daemon in lxsession (>=0.4)
+  * See x-terminal-emulator as default terminal for pcmanfm
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Mon, 16 Nov 2009 13:40:44 +0800
+
+lxde-common (0.4.2-2) unstable; urgency=low
+
+  * debian/control:
+    - Update lxde-common depends on lxde-settings-daemon | lxsession (>= 0.4.0)
+  * Bump Standard-version to 3.8.3
+  * Minor update in README.Debian
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Sun, 15 Nov 2009 23:48:37 +0800
+
+lxde-common (0.4.2-1) unstable; urgency=low
+
+  * New upstream release
+    - Remove spurious reference to file "default"
+    - Use ln -s -f so reinstalling works
+    - Use Docbook-XML instead of SGML for manpages
+    - Translation update 
+  * Correct debian/watch
+  * debian/control:
+    - Update package descriptions
+    - Recommends on gdm | x-display-manager
+
+ -- Andrew Lee (李健秋) <ajqlee@debian.org>  Sun, 26 Jul 2009 20:08:50 +0200
+
+lxde-common (0.4.1-2) unstable; urgency=low
+
+  * debian/control:
+    - Update depends/recommends/suggests by advices from Jonas Smedegaard
+    - Bumped Standard-version to 3.8.2
+
+ -- Andrew Lee <andrew@linux.org.tw>  Sun, 19 Jul 2009 13:24:07 +0200
+
+lxde-common (0.4.1-1) unstable; urgency=low
+
+  * New upstream release (Closes:#517727, #517499, #527079)
+    - Split lxde-settings-daemon to separate package. 
+  * debian/control:
+    - Added lxde-core depends on lxsession (>= 0.3.7)
+    - Added lxde depends on lxinput (>=0.1), lxsession-edit, lxshortcut 
+      and lxmusic
+    - Suggests on s/x-www-browser/www-browser/
+  * Conffiles are now standard at /etc/xdg location (Closes: #517740)
+
+ -- Andrew Lee <andrew@linux.org.tw>  Fri, 29 May 2009 20:17:55 +0800
+
+lxde-common (0.3.2.1+svn20080509-6) unstable; urgency=low
+
+  * Set x-session-manager with priority 50 (same as xfce4) 
+    (Closes:#511577)
+  * lxde-core:
+    - Suggests lxterminal, x-www-browser. (Closes:#524177)
+    - Recommends xscreensaver. (Closes:#524391)
+  * Minor description fix. (Closes:#502385)
+
+ -- Andrew Lee <andrew@linux.org.tw>  Thu, 23 Apr 2009 14:23:15 +0800
+
+lxde-common (0.3.2.1+svn20080509-5) unstable; urgency=low
+
+  * Added 'lock screen' and 'Logout' buttons into default panel settings.
+    (Closes: #493774)
+  * debian/control:
+    - lxde metapackage depends on lxterminal, lxrandr, obconf 
+    - lxde metapackage suggests on lxtask
+
+ -- Andrew Lee <andrew@linux.org.tw>  Sat, 27 Sep 2008 16:36:01 +0800
+
 lxde-common (0.3.2.1+svn20080509-4) unstable; urgency=high
 
   * Remove parallel builds support in debian/rules. (Closes: #490328) 

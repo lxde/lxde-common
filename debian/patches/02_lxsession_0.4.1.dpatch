@@ -1,0 +1,16 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 02_lxsession_0.4.1.dpatch by Andrew Lee (李健秋) <ajqlee@debian.org>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: Support new command line argument for lxsession 0.4.1
+
+@DPATCH@
+diff -urNad lxde-common-0.5.0~/startlxde.in lxde-common-0.5.0/startlxde.in
+--- lxde-common-0.5.0~/startlxde.in	2009-09-04 17:46:53.000000000 +0800
++++ lxde-common-0.5.0/startlxde.in	2009-12-18 22:52:50.098199115 +0800
+@@ -25,4 +25,4 @@
+ export SAL_USE_VCLPLUGIN=gtk
+ 
+ # Start the LXDE session
+-exec @prefix@/bin/lxsession -s LXDE
++exec @prefix@/bin/lxsession -s LXDE -e LXDE
