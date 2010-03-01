@@ -33,7 +33,7 @@ openbox_DATA= \
 
 pcmanfmdir=$(datadir)/lxde/pcmanfm
 pcmanfm_DATA= \
-	pcmanfm/main.lxde
+	pcmanfm/pcmanfm.conf
 
 EXTRA_DIST = \
 	autostart \
@@ -45,7 +45,7 @@ EXTRA_DIST = \
 	openbox/rc.xml.in \
 	openbox/menu.xml \
 	openbox-lxde.in \
-	pcmanfm/main.lxde.in \
+	pcmanfm/pcmanfm.conf.in \
 	$(lxpanel_DATA) \
 	lxpanel/panel.in
 
