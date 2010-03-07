@@ -1,5 +1,5 @@
 AC_PREREQ([2.57])
-AC_INIT(lxde-common,[0.5.0], [],lxde-common)
+AC_INIT(lxde-common,[0.5.5], [],lxde-common)
 AM_INIT_AUTOMAKE()
 dnl AC_PROG_INTLTOOL(, [no-xml])
 dnl AM_MAINTAINER_MODE
