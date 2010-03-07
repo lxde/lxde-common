@@ -37,5 +37,7 @@ if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
 	eval "$(dbus-launch --sh-syntax --exit-with-session)"
 fi
 
+export XDG_MENU_PREFIX="lxde-"
+
 # Start the LXDE session
 exec @prefix@/bin/lxsession -s LXDE -e LXDE
