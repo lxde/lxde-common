@@ -48,7 +48,16 @@ AC_OUTPUT([
   lxpanel/panel
   openbox/rc.xml
   openbox-lxde
-  pcmanfm/pcmanfm.conf
+  pcmanfm/lxde.conf
   man/Makefile
 ])
 
+if test x"$sysconfdir" != x'/etc'; then
+    echo
+    echo
+    echo 'Error: sysconfdir is not /etc.'
+    echo 'Please consider passing --sysconfdir=/etc to configure.';
+    echo 'Otherwise default config files will be installed to wrong place.'
+    echo
+    echo
+fi
