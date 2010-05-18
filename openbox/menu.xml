@@ -25,7 +25,7 @@
   <item label="Desktop Settings">
     <action name="Execute">
       <startupnotify><enabled>yes</enabled></startupnotify>
-      <command>pcmanfm --show-pref 2</command>
+      <command>pcmanfm --desktop-pref</command>
     </action>
   </item>
   <item label="Window Management Settings">
