@@ -31,7 +31,7 @@ openbox_DATA= \
 	openbox/rc.xml \
 	openbox/menu.xml
 
-pcmanfmdir=$(sysconfdir)/xdg/pcmanfm
+pcmanfmdir=$(sysconfdir)/xdg/pcmanfm/LXDE
 pcmanfm_DATA= \
 	pcmanfm/pcmanfm.conf
 
