@@ -26,7 +26,7 @@ lxpanel_DATA=lxpanel/config
 lxpanel_paneldir=$(datadir)/lxpanel/profile/LXDE/panels
 lxpanel_panel_DATA=lxpanel/panel
 
-openboxdir=$(datadir)/lxde/openbox
+openboxdir=$(sysconfdir)/xdg/openbox/LXDE
 openbox_DATA= \
 	openbox/rc.xml \
 	openbox/menu.xml
