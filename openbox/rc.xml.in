@@ -277,7 +277,7 @@
       </action>
   </keybind>
 
-  <keybind key="F11">
+  <keybind key="A-F11">
      <action name="ToggleFullscreen"/>
   </keybind>
 
