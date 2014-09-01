@@ -277,6 +277,12 @@
       </action>
   </keybind>
 
+  <keybind key="A-F1">
+      <action name="Execute">
+          <command>lxpanelctl menu</command>
+      </action>
+  </keybind>
+
   <keybind key="A-F11">
      <action name="ToggleFullscreen"/>
   </keybind>
