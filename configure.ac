@@ -39,6 +39,12 @@ fi
 
 AM_CONDITIONAL(ENABLE_REGENERATE_MAN, test "x$enable_man" != "xno")
 
+dnl Fix invalid sysconfdir when --prefix=/usr
+if test `eval "echo $sysconfdir"` = /usr/etc
+then
+    sysconfdir=/etc
+fi
+
 AC_OUTPUT([
   Makefile
   startlxde
