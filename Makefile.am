@@ -9,6 +9,9 @@ xsession_DATA = LXDE.desktop
 defaultsdir=$(sysconfdir)/xdg/lxsession/LXDE
 defaults_DATA = autostart desktop.conf
 
+lxlogoutdir=$(datadir)/applications/
+lxlogout_DATA=lxde-logout.desktop
+
 wallpapersdir=$(datadir)/lxde/wallpapers
 wallpapers_DATA= \
 	wallpapers/lxde_blue.jpg \
