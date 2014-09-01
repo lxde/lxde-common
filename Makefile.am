@@ -20,10 +20,10 @@ images_DATA= \
 	images/logout-banner.png \
 	images/lxde-icon.png
 
-lxpaneldir=$(datadir)/lxpanel/profile/LXDE
+lxpaneldir=$(sysconfdir)/xdg/lxpanel/profile/LXDE
 lxpanel_DATA=lxpanel/config
 
-lxpanel_paneldir=$(datadir)/lxpanel/profile/LXDE/panels
+lxpanel_paneldir=$(sysconfdir)/xdg/lxpanel/profile/LXDE/panels
 lxpanel_panel_DATA=lxpanel/panel
 
 openboxdir=$(sysconfdir)/xdg/openbox/LXDE
