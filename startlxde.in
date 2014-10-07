@@ -4,13 +4,6 @@ if [ -z "$XDG_CONFIG_HOME" ]; then
 	export XDG_CONFIG_HOME="$HOME/.config"
 fi
 
-# Ensure the existance of pcmanfm config file
-PCMANFM_CONF_DIR="$XDG_CONFIG_HOME/pcmanfm/LXDE"
-if [ ! -f "$PCMANFM_CONF_DIR/pcmanfm.conf" ]; then
-	mkdir -p "$PCMANFM_CONF_DIR"
-	cp @sysconfdir@/xdg/pcmanfm/LXDE/pcmanfm.conf "$PCMANFM_CONF_DIR/pcmanfm.conf"
-fi
-
 # Ensure the existance of openbox config file
 OPENBOX_CONF_DIR="$XDG_CONFIG_HOME/openbox"
 if [ ! -f "$OPENBOX_CONF_DIR/lxde-rc.xml" ]; then
