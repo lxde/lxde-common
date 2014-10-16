@@ -299,6 +299,11 @@
       <action name="Execute"><command>gnome-screenshot -i</command></action>
   </keybind>
 
+  <!-- Launch LXRandR when Fn+Screen is pressed -->
+  <keybind key="XF86Display">
+      <action name="Execute"><command>lxrandr</command></action>
+  </keybind>
+
 </keyboard>
 
 
