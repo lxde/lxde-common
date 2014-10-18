@@ -23,6 +23,7 @@ if [ "x${ACLOCAL_DIR}" != "x" ]; then
 fi
 
 ${ACLOCAL:-aclocal$AM_VERSION} ${ACLOCAL_ARG}
+AUTOMAKE=$AUTOMAKE intltoolize -c --automake --force
 $AUTOMAKE --add-missing --copy --include-deps
 ${AUTOCONF:-autoconf$AC_VERSION}
 

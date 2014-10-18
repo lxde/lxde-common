@@ -1,4 +1,4 @@
-SUBDIRS = man
+SUBDIRS = man po
 
 bin_SCRIPTS = startlxde lxde-logout openbox-lxde
 
@@ -9,8 +9,10 @@ xsession_DATA = LXDE.desktop
 defaultsdir=$(sysconfdir)/xdg/lxsession/LXDE
 defaults_DATA = autostart desktop.conf
 
-lxlogoutdir=$(datadir)/applications/
-lxlogout_DATA=lxde-logout.desktop
+desktopdir=$(datadir)/applications
+desktop_in_files = lxde-logout.desktop
+desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
+@INTLTOOL_DESKTOP_RULE@
 
 wallpapersdir=$(datadir)/lxde/wallpapers
 wallpapers_DATA= \
@@ -41,7 +43,8 @@ pcmanfm_DATA= \
 EXTRA_DIST = \
 	autostart \
 	desktop.conf \
-	LXDE.desktop.in \
+	LXDE.desktop.in.in \
+	lxde-logout.desktop.in \
 	startlxde.in \
 	$(wallpapers_DATA) \
 	$(images_DATA) \
@@ -52,5 +55,5 @@ EXTRA_DIST = \
 	$(lxpanel_DATA) \
 	lxpanel/panel.in
 
-CLEANFILES = $(bin_SCRIPTS)
+CLEANFILES = $(bin_SCRIPTS) LXDE.desktop lxde-logout.desktop
 
