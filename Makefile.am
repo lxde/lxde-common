@@ -10,7 +10,7 @@ defaultsdir=$(sysconfdir)/xdg/lxsession/LXDE
 defaults_DATA = autostart desktop.conf
 
 desktopdir=$(datadir)/applications
-desktop_in_files = lxde-logout.desktop
+desktop_in_files = lxde-logout.desktop.in lxde-screenlock.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
 @INTLTOOL_DESKTOP_RULE@
 
@@ -44,7 +44,7 @@ EXTRA_DIST = \
 	autostart \
 	desktop.conf \
 	LXDE.desktop.in.in \
-	lxde-logout.desktop.in \
+	$(desktop_in_files) \
 	startlxde.in \
 	$(wallpapers_DATA) \
 	$(images_DATA) \
@@ -55,5 +55,5 @@ EXTRA_DIST = \
 	$(lxpanel_DATA) \
 	lxpanel/panel.in
 
-CLEANFILES = $(bin_SCRIPTS) LXDE.desktop lxde-logout.desktop
+CLEANFILES = $(bin_SCRIPTS) LXDE.desktop $(desktop_DATA)
 
