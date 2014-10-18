@@ -134,6 +134,9 @@ Plugin {
     type = launchbar
     Config {
         Button {
+            id=lxde-screenlock.desktop
+        }
+        Button {
             id=lxde-logout.desktop
         }
     }
