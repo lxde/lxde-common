@@ -1,5 +1,5 @@
 AC_PREREQ([2.57])
-AC_INIT(lxde-common,[0.5.6], [http://lxde.org])
+AC_INIT(lxde-common,[0.99.0], [http://lxde.org])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign no-dist-gzip dist-xz])
 dnl AC_PROG_INTLTOOL(, [no-xml])
 dnl AM_MAINTAINER_MODE
