@@ -2,37 +2,40 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2014-10-18 23:20+0300\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2014-11-28 07:46+0000\n"
+"Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.12.0\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Pootle 2.7.0-alpha1\n"
+"X-POOTLE-MTIME: 1417160790.000000\n"
+"X-Pootle-Path: /he/lxde-common/po/he.po\n"
+"X-Pootle-Revision: 0\n"
 
 #: ../LXDE.desktop.in.in.h:1
 msgid "LXDE - Lightweight X11 desktop environment"
-msgstr ""
+msgstr "LXDE - סביבת X11 קלילה לשולחן העבודה"
 
 #: ../lxde-logout.desktop.in.h:1
 msgid "Logout"
-msgstr ""
+msgstr "יציאה"
 
 #: ../lxde-logout.desktop.in.h:2
 msgid "Logout, shutdown or reboot"
-msgstr ""
+msgstr "יציאה, כיבוי או הפעלה מחדש"
 
 #: ../lxde-screenlock.desktop.in.h:1
 msgid "Lock your screen"
-msgstr ""
+msgstr "נעילת המסך שלך"
 
 #: ../lxde-screenlock.desktop.in.h:2
 msgid "ScreenLock"
-msgstr ""
+msgstr "נעילת מסך"

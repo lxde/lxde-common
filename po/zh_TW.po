@@ -17,6 +17,8 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Pootle 2.6.0-rc2\n"
 "X-POOTLE-MTIME: 1426835671.000000\n"
+"X-Pootle-Path: /zh_TW/lxde-common/po/zh_TW.po\n"
+"X-Pootle-Revision: 0\n"
 
 #: ../LXDE.desktop.in.in.h:1
 msgid "LXDE - Lightweight X11 desktop environment"
