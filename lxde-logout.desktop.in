@@ -4,4 +4,5 @@ _Name=Logout
 _Comment=Logout, shutdown or reboot
 Icon=gnome-logout
 Exec=lxde-logout
+TryExec=lxsession-logout
 NoDisplay=true
