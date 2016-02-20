@@ -258,6 +258,13 @@
     </action>
   </keybind>
 
+  <!-- Keybindings for finding files -->
+  <keybind key="W-f">
+    <action name="Execute">
+      <command>pcmanfm --find-files</command>
+    </action>
+  </keybind>
+
   <!--keybindings for LXPanel -->
   <keybind key="W-r">
       <action name="Execute">
