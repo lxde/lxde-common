@@ -120,6 +120,15 @@ Plugin {
 }
 
 Plugin {
+    type = volume
+    Config {
+        VolumeMuteKey = XF86AudioMute
+        VolumeDownKey = XF86AudioLowerVolume
+        VolumeUpKey = XF86AudioRaiseVolume
+    }
+}
+
+Plugin {
     type = tray
 }
 
