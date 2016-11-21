@@ -3,7 +3,7 @@
 
 Global {
     edge=bottom
-    allign=left
+    align=left
     margin=0
     widthtype=percent
     width=100
@@ -13,6 +13,8 @@ Global {
     alpha=0
     setdocktype=1
     setpartialstrut=1
+    autohide=0
+    heightwhenhidden=0
     usefontcolor=1
     fontcolor=#ffffff
     background=1
