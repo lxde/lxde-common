@@ -112,10 +112,6 @@ Plugin {
 }
 
 Plugin {
-    type = netstat
-}
-
-Plugin {
     type = cpu
 }
 
