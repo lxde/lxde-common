@@ -1,1 +1,20 @@
+0.99.2
+-------------------------------------------------------------------------
+* Replaced 'stretch' wallpaper_mode setting with 'crop' in pcmanfm.conf.
+* Updated view_mode and sort settings in pcmanfm.conf with new values.
+* Made dbus-launch start only if $XDG_RUNTIME_DIR/bus isn't available.
+* Updated lxpanel configuration files to match latest version.
+* Added volume plugin to default panel, near everyone uses audio nowadays.
+* Removed netstat plugin from default panel, it's usually superseded with
+    either NM or wicd.
+* Updated startlxde.1 man page.
+* Ensured the existance of the user applications folder by startlxde.
+
+0.99.1
+-------------------------------------------------------------------------
+* Added TryExec=lxsession-logout into lxde-logout.desktop.
+* Added W+f keybinding for pcmanfm --find-files.
+
+0.99.0
+-------------------------------------------------------------------------
 * Removed obsolete key Encoding from desktop entry files.
