@@ -27,7 +27,9 @@ export SAL_USE_VCLPLUGIN=gtk
 
 # Launch DBus if needed
 if which dbus-launch >/dev/null && test -z "$DBUS_SESSION_BUS_ADDRESS"; then
-	eval "$(dbus-launch --sh-syntax --exit-with-session)"
+	if test -z "$XDG_RUNTIME_DIR" -o ! -S "$XDG_RUNTIME_DIR/bus" -o ! -O "$XDG_RUNTIME_DIR/bus"; then
+		eval "$(dbus-launch --sh-syntax --exit-with-session)"
+	fi
 fi
 
 export XDG_MENU_PREFIX="lxde-"
