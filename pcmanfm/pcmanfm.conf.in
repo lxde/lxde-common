@@ -3,7 +3,7 @@ bm_open_method=0
 su_cmd=xdg-su -c '%s'
 
 [desktop]
-wallpaper_mode=1
+wallpaper_mode=crop
 wallpaper=@prefix@/share/lxde/wallpapers/lxde_blue.jpg
 desktop_bg=#000000
 desktop_fg=#ffffff
