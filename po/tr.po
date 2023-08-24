@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-18 23:20+0300\n"
+"POT-Creation-Date: 2023-08-24 17:30+0200\n"
 "PO-Revision-Date: 2014-10-20 16:11+0000\n"
 "Last-Translator: vgezer <volkangezer@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,9 +31,9 @@ msgid "Logout, shutdown or reboot"
 msgstr "Oturumu kapat, bilgisayarı kapat veya yeniden başlat"
 
 #: ../lxde-screenlock.desktop.in.h:1
-msgid "Lock your screen"
-msgstr "Ekranı kilitle"
-
-#: ../lxde-screenlock.desktop.in.h:2
 msgid "ScreenLock"
 msgstr "ScreenLock"
+
+#: ../lxde-screenlock.desktop.in.h:2
+msgid "Lock your screen"
+msgstr "Ekranı kilitle"

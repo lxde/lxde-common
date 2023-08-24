@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-18 23:20+0300\n"
+"POT-Creation-Date: 2023-08-24 17:30+0200\n"
 "PO-Revision-Date: 2014-10-26 22:24+0000\n"
 "Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,9 +31,9 @@ msgid "Logout, shutdown or reboot"
 msgstr "Terminar sessão, desligar ou reiniciar"
 
 #: ../lxde-screenlock.desktop.in.h:1
-msgid "Lock your screen"
-msgstr "Bloquear o ecrã"
-
-#: ../lxde-screenlock.desktop.in.h:2
 msgid "ScreenLock"
 msgstr "Bloqueio de ecrã"
+
+#: ../lxde-screenlock.desktop.in.h:2
+msgid "Lock your screen"
+msgstr "Bloquear o ecrã"
