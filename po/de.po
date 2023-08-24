@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Ingo Brückl, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-18 23:20+0300\n"
-"PO-Revision-Date: 2014-10-29 17:55+0000\n"
-"Last-Translator: H.Humpel <H.Humpel@gmx.de>\n"
+"POT-Creation-Date: 2023-08-24 17:30+0200\n"
+"PO-Revision-Date: 2023-08-24 17:34+0200\n"
+"Last-Translator: Ingo Brückl <ib@oddnet.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -20,20 +20,20 @@ msgstr ""
 
 #: ../LXDE.desktop.in.in.h:1
 msgid "LXDE - Lightweight X11 desktop environment"
-msgstr "LXDE - Leichtgewichtige X11 Desktop-Umgebung"
+msgstr "LXDE - Schlanke X11-Desktop-Umgebung"
 
 #: ../lxde-logout.desktop.in.h:1
 msgid "Logout"
-msgstr "Abmelden"
+msgstr "Abmeldung"
 
 #: ../lxde-logout.desktop.in.h:2
 msgid "Logout, shutdown or reboot"
-msgstr "Abmelden, herunterfahren oder neu starten"
+msgstr "Abmeldung, Herunterfahren oder Neustart"
 
 #: ../lxde-screenlock.desktop.in.h:1
-msgid "Lock your screen"
-msgstr "Den Bildschirm sperren"
-
-#: ../lxde-screenlock.desktop.in.h:2
 msgid "ScreenLock"
 msgstr "Bildschirmsperre"
+
+#: ../lxde-screenlock.desktop.in.h:2
+msgid "Lock your screen"
+msgstr "Den Bildschirm sperren"
