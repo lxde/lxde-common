@@ -13,19 +13,10 @@ Global {
     alpha=0
     setdocktype=1
     setpartialstrut=1
-    autohide=0
-    heightwhenhidden=0
     usefontcolor=1
     fontcolor=#ffffff
     background=1
     backgroundfile=@prefix@/share/lxpanel/images/background.png
-}
-
-Plugin {
-    type = space
-    Config {
-        Size=2
-    }
 }
 
 Plugin {
@@ -103,6 +94,7 @@ Plugin {
         ShowIconified=1
         ShowMapped=1
         ShowAllDesks=0
+        ShowSquareBrackets=1
         UseMouseWheel=1
         UseUrgencyHint=1
         FlatButton=0
