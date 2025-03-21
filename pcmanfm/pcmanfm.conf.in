@@ -1,6 +1,5 @@
 [config]
 bm_open_method=0
-su_cmd=xdg-su -c '%s'
 
 [desktop]
 wallpaper_mode=crop
@@ -10,8 +9,6 @@ desktop_fg=#ffffff
 desktop_shadow=#000000
 
 [ui]
-always_show_tabs=0
-hide_close_btn=0
 win_width=640
 win_height=480
 view_mode=icon
