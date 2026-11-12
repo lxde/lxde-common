@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
-_Name=ScreenLock
-_Comment=Lock your screen
+Name=ScreenLock
+Comment=Lock your screen
 Icon=system-lock-screen
 Exec=lxlock
 TryExec=lxlock

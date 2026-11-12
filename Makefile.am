@@ -15,7 +15,10 @@ defaults_DATA = autostart desktop.conf
 desktopdir=$(datadir)/applications
 desktop_in_files = lxde-logout.desktop.in lxde-screenlock.desktop.in
 desktop_DATA = $(desktop_in_files:.desktop.in=.desktop)
-@INTLTOOL_DESKTOP_RULE@
+
+SUFFIXES = .desktop.in .desktop
+.desktop.in.desktop:
+	$(AM_V_GEN)$(MSGFMT) --desktop --template $< -d $(top_srcdir)/po -o $@
 
 wallpapersdir=$(datadir)/lxde/wallpapers
 wallpapers_DATA= \

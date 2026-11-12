@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=LXDE
-_Comment=LXDE - Lightweight X11 desktop environment
+Comment=LXDE - Lightweight X11 desktop environment
 Exec=@prefix@/bin/startlxde
 # Icon=
 Type=Application

@@ -1,6 +1,7 @@
 #! /bin/sh
 AC_VERSION=
 
+AUTOPOINT=${AUTOPOINT:-autopoint}
 AUTOMAKE=${AUTOMAKE:-automake}
 AM_INSTALLED_VERSION=$($AUTOMAKE --version | sed -e '2,$ d' -e 's/.* \([0-9]*\.[0-9]*\).*/\1/')
 
@@ -22,8 +23,8 @@ if [ "x${ACLOCAL_DIR}" != "x" ]; then
   ACLOCAL_ARG=-I ${ACLOCAL_DIR}
 fi
 
-${ACLOCAL:-aclocal$AM_VERSION} ${ACLOCAL_ARG}
-AUTOMAKE=$AUTOMAKE intltoolize -c --automake --force
+${AUTOPOINT} -f
+${ACLOCAL:-aclocal$AM_VERSION} -I m4 ${ACLOCAL_ARG}
 $AUTOMAKE --add-missing --copy --include-deps
 ${AUTOCONF:-autoconf$AC_VERSION}
 
