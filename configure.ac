@@ -1,4 +1,5 @@
 AC_PREREQ([2.57])
+AC_CONFIG_MACRO_DIRS([m4])
 AC_INIT(lxde-common,[0.99.4], [http://lxde.org])
 AM_INIT_AUTOMAKE([-Wall -Werror foreign no-dist-gzip dist-xz])
 dnl AC_PROG_INTLTOOL(, [no-xml])
@@ -48,6 +49,8 @@ fi
 GETTEXT_PACKAGE=lxde-common
 AC_DEFINE_UNQUOTED(GETTEXT_PACKAGE, "$GETTEXT_PACKAGE", [Name of default gettext domain])
 AC_SUBST(GETTEXT_PACKAGE)
+AM_GNU_GETTEXT([external])
+AM_GNU_GETTEXT_VERSION([0.19.8])
 
 # Generate po/LINGUAS on the fly rather than relying on translators
 # to maintain it manually. This also overcome the problem that Transifex
@@ -58,10 +61,6 @@ do
     lang=`echo "$po_file" | sed "s|.*/po/\(.*\)\.po|\1|g"`
     echo $lang >> $srcdir/po/LINGUAS
 done
-
-AM_GLIB_GNU_GETTEXT
-
-IT_PROG_INTLTOOL([0.40.0])
 
 dnl dirty hack used to prevent the installation of useless mo files.
 USE_NLS=no
